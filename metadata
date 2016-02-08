@@ -1,0 +1,18 @@
+#!/usr/bin/env perl
+use v5.14;
+
+# process metadata.yaml
+
+my $out;
+while (<>) {
+    if (/^(tr\d+)/) {
+        say $out '...' if $out;
+        close $out if $out;
+        open $out, '>', "$1/metadata.yaml";
+        say $out "---";
+    } elsif ($out) {
+        print $out $_;
+    }
+}
+
+say $out '...' if $out;

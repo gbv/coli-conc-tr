@@ -1,0 +1,23 @@
+---
+tr1:
+    title: coli-conc technical report 1
+    subtitle: Cocoda primer
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2015-04-13
+    doi: 10.5281/zenodo.16786
+    license: CC-BY-SA
+    lang: en
+tr2:
+    title: coli-conc technical report 2
+    subtitle: JSKOS primer
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2016-02-??
+    doi: 10.5281/zenodo.????
+    license: CC-BY-SA
+    lang: en
