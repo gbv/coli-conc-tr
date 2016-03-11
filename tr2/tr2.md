@@ -4,16 +4,33 @@ Organization Systems (KOS).
 
 # Motivation
 
-...project coli-conc...
+Project [coli-conc](https://coli-conc.gbv.de/) aims at concordances between
+Knowledge Organization Systems (KOS). To manage such concordances it first
+requires access to KOS and its concepts. The lack of a satisfying general data
+format and method of access to KOS, apart from SKOS and SPARQL, resulted in the
+(ongoing) specification of [JSKOS data format](http://gbv.github.io/jskos/) and
+[JSKOS-API](http://gbv.github.io/jskos-api/). To integrate existing KOS via
+these standards, there are three options:
 
-To minimize the need of writing wrappers to KOS software, support of
-JSKOS(-API) should directly be included in existing products. This is
-possible at least for Open Source software.
+1. Conversion of KOS to JSKOS import into a database with support of JSKOS-API
+2. Creation of JSKOS-API wrappers to existing terminology services
+3. Add support of JSKOS-API to existing KOS software
+
+The first option is executed at VZG for the most needed systems such as Dewey
+Decimal Classification (DDC) and Regensburger Verbundklassifikation (RVK).
+First examples of the second option are given at
+<https://github.com/gbv/jskos-php-examples>. But only the third option will
+scale to larger number of KOS. Open source luckily allows to extend existing
+software. For this reason an overview of Open Source software for Knowledge
+Organization Systems (KOS) is needed.
 
 # Existing lists of KOS software (Metabibliography)
 
-The following lists of KOS software were used to find open source software
-(including commercial products with an open source version):
+Project coli-conc does not include creation of software to manage KOS because
+such software already exists in form of thesaurus editors, vocabulary
+management systems and similar tools.  The following lists of KOS software were
+used to find open source software (including commercial products with an open
+source version):
 
 * The [coli-conc Zotero library](https://www.zotero.org/groups/coli-conc/items/)
   contains [a section on software](https://www.zotero.org/groups/coli-conc/items/collectionKey/W5F4ENNP)
@@ -27,7 +44,7 @@ The following lists of KOS software were used to find open source software
   [Software for building and editing thesauri](http://www.taxobank.org/content/thesauri-and-vocabulary-control-thesaurus-software) originally created by Leonard D. Will
 
 Several more lists of taxonomy tools, ontology editors etc. exists so some
-tools may have been missed.
+tools may have been missed. Feedback is welcome!
 
 # Open Source KOS software
 
@@ -40,7 +57,7 @@ Name and Link|Language|License
 [iQvoc](http://iqvoc.net/) | Ruby | Apache
 [OpenSKOS](http://openskos.org/) | PHP | GPL
 [Protégé](http://protege.stanford.edu/) | Java | BSD
-[Semantic Media](Wiki https://www.semantic-mediawiki.org) | PHP | GPL
+[Semantic MediaWiki](https://www.semantic-mediawiki.org) | PHP | GPL
 [SISSVoc](http://www.sissvoc.info/) | Java & XSLT | Apache
 [SKOS API](http://skosapi.sourceforge.net/) | Java | LGPL     
 [Skosify](https://github.com/NatLibFi/Skosify) | Python | MIT 
@@ -53,6 +70,7 @@ Name and Link|Language|License
 [XMind](http://www.xmind.net/developer/) | Java | LGPL & EPL   
 [VoCol](https://github.com/vocol/vocol) | Java & JavaScript | MIT  
 [Wandora](http://wandora.org/) | Java | GPL  
+[Wikibase](http://wikiba.se/) | PHP | GPL
 
 # Summary
 
@@ -62,7 +80,6 @@ Additional evaluation is needed to decide which products to focus on.
 Nevertheless the list shows that Java and PHP are the most used programming
 languages, so programming libraries for JSKOS(-API) should first be implemented
 in these languages (in addition to JavaScript which is needed for web clients).
-
 A first start has been made with a 
 [JSKOS programming library in PHP](https://packagist.org/packages/gbv/jskos).
 
