@@ -1,7 +1,8 @@
 ---
 tr1:
-    title: coli-conc technical report 1
-    subtitle: Cocoda primer
+    series: coli-conc technical report
+    number: 1
+    title: Cocoda primer
     author:
         name: Jakob Voß
         email: jakob.voss@gbv.de
@@ -11,8 +12,9 @@ tr1:
     license: CC-BY-SA
     lang: en
 tr2:
-    title: coli-conc technical report 2
-    subtitle: JSKOS primer
+    series: coli-conc technical report
+    number: 2
+    title: Open Source KOS software
     author:
         name: Jakob Voß
         email: jakob.voss@gbv.de

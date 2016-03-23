@@ -39,11 +39,12 @@ $for(include-before)$
 $include-before$
 $endfor$
 <div class="container">
-$if(title)$
 <h2>
-$title$$if(subtitle)$: $subtitle$$endif$
-</h2>
+$title$
+$if(series)$
+<small>$series$ $number$</small>
 $endif$
+</h2>
 $for(author)$
 <div class="author">
     <div>
