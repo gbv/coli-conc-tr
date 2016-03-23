@@ -34,7 +34,7 @@ source version):
 
 * The [coli-conc Zotero library](https://www.zotero.org/groups/coli-conc/items/)
   contains [a section on software](https://www.zotero.org/groups/coli-conc/items/collectionKey/W5F4ENNP)
-  with almost 30 enries.
+  with almost 30 entries.
 
 * The [*ANDS appraisal of thesaurus software tools*](https://rd-alliance.org/system/files/documents/Thesaurus%20Software%20Tools.xlsx) is an Excel sheet created by members of the
   [Vocabulary Services Interest Group](https://rd-alliance.org/node/47826)
