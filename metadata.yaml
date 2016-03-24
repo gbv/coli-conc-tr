@@ -11,6 +11,7 @@ tr1:
     doi: 10.5281/zenodo.16786
     license: CC-BY-SA
     lang: en
+    language: english
 tr2:
     series: coli-conc technical report
     number: 2
@@ -23,3 +24,4 @@ tr2:
     doi: 10.5281/zenodo.????
     license: CC-BY-SA
     lang: en
+    language: english

@@ -1,0 +1,8 @@
+---
+documentclass: scrreprt
+classoption:
+    - "titlepage=false"
+    - "twoside=semi"
+    - "paper=a4"
+    - "fontsize=12pt"
+...
