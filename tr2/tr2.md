@@ -24,7 +24,7 @@ scale to larger number of KOS. Open source luckily allows to extend existing
 software. For this reason an overview of Open Source software for Knowledge
 Organization Systems (KOS) is needed.
 
-# Existing lists of KOS software (Metabibliography)
+# Existing lists of KOS software (a metabibliography)
 
 Project coli-conc does not include creation of software to manage KOS because
 such software already exists in form of thesaurus editors, vocabulary
