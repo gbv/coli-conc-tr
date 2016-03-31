@@ -11,9 +11,11 @@ metadata: metadata.yaml
 
 .md.html: metadata
 	pandoc $(PANDOC_OPTIONS) -t html5 $(HTML_OPTIONS) -M source:$< \
+		--bibliography $(dir $<)bibliography.bib \
 		$(dir $<)metadata.yaml $< | sed 's/^<table/<table class="table"/' > $@
 
 .md.pdf: metadata
 	pandoc $(PANDOC_OPTIONS) $(PDF_OPTIONS) -M source:$< \
+		--bibliography $(dir $<)bibliography.bib \
 		$(dir $<)metadata.yaml texoptions.yaml $< -o $@
 

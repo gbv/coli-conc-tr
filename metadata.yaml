@@ -25,3 +25,16 @@ tr2:
     license: CC-BY-SA
     lang: en
     language: english
+tr3:
+    series: coli-conc Technical Report
+    number: 3
+    title: A novel approach to terminology mappings
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2016-04-01
+    doi: 10.5281/zenodo.xxxx
+    license: CC-BY-SA
+    lang: en
+    language: english
