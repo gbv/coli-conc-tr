@@ -38,3 +38,16 @@ tr3:
     license: CC-BY-SA
     lang: en
     language: english
+tr4:
+    series: coli-conc report
+    number: 4
+    title: Anforderungen an Normdatendienste
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2016-04-01
+    doi: 10.5281/zenodo.XXX
+    license: CC-BY-SA
+    lang: de
+    language: ngerman
