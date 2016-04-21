@@ -51,4 +51,17 @@ tr4:
     license: CC-BY-SA
     lang: de
     language: ngerman
+tr5:
+    series: coli-conc report
+    number: 5
+    title: ...
+    author:
+        name: ...
+        email: ...
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2016-04-??
+    doi: 10.5281/zenodo.?????
+    license: CC-BY-SA
+    lang: de
+    language: ngerman
 
