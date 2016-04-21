@@ -1,18 +1,25 @@
 #!/usr/bin/env perl
 use v5.14;
 
-# process metadata.yaml
+open my $in, '<', 'metadata.yaml';
+open my $make, '>', 'reports.make';
 
+my @all;
 my $out;
-while (<>) {
+while (<$in>) {
     if (/^(tr\d+)/) {
+        say $1;
         say $out '...' if $out;
         close $out if $out;
         open $out, '>', "$1/metadata.yaml";
         say $out "---";
+        say $make "$1: $1/$1.html $1/$1.pdf";
+        push @all, $1;
     } elsif ($out) {
         print $out $_;
     }
 }
+
+say $make "all: ", join ' ', @all;
 
 say $out '...' if $out;

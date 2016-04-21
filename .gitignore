@@ -1,2 +1,4 @@
 tr*/*.html
+tr*/*.pdf
 tr*/metadata.yaml
+reports.make

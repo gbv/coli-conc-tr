@@ -7,15 +7,21 @@ HTML_OPTIONS=--template template.html \
 PDF_OPTIONS=--template template.tex --latex-engine=lualatex
 
 metadata: metadata.yaml
-	perl metadata $<
+	@perl metadata
 
-.md.html: metadata
-	pandoc $(PANDOC_OPTIONS) -t html5 $(HTML_OPTIONS) -M source:$< \
+reports.make: metadata
+
+.md.html: metadata template.html
+	@echo $@
+	@pandoc $(PANDOC_OPTIONS) -t html5 $(HTML_OPTIONS) -M source:$< \
 		--bibliography $(dir $<)bibliography.bib \
 		$(dir $<)metadata.yaml $< | sed 's/^<table/<table class="table"/' > $@
 
-.md.pdf: metadata
-	pandoc $(PANDOC_OPTIONS) $(PDF_OPTIONS) -M source:$< \
+.md.pdf: metadata template.tex
+	@echo $@
+	@pandoc $(PANDOC_OPTIONS) $(PDF_OPTIONS) -M source:$< \
 		--bibliography $(dir $<)bibliography.bib \
 		$(dir $<)metadata.yaml texoptions.yaml $< -o $@
 
+# include if reports.make exists
+-include reports.make
