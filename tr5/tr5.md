@@ -1,13 +1,13 @@
-...Abstract (1-2 Sätze)...
+...abstract (1-2 sentences)...
 
-# Überschrift
-
-Text ...
-
-# Überschrift
+# Section
 
 Text ...
 
-<!-- Folgende Zeile ggf. löschen -->
+# Section
 
-# Literaturverzeichnis
+Text ...
+
+<!-- remove line if not needed -->
+
+# References
