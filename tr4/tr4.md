@@ -6,7 +6,7 @@ Normdaten im weitesten Sinne, d.h. Wissensorganisationssysteme wie
 Klassifikationen, Thesauri und Normdateien, ermöglichen die verlässliche
 Identifizierung von Personen, Orten, Sachgebieten und anderen Entitäten.  Daher
 spielen Normdaten sowohl bei der Erhebung als auch bei der Auswertung von Daten
-(bibliographische Daten, Forschungsdaten...) eine besondere Rolle.  Um die
+(bibliographische Daten, Forschungsdaten etc.) eine besondere Rolle.  Um die
 Nutzbarkeit von Normdaten zu verbessern, müssen diese in geeigneter Weise
 bereitgestellt werden. In der Session "Anforderungen an Normdatendienste" auf
 dem Workshop der DINI AG KIM wurde deshalb am 5. April 2016 der Frage
@@ -15,14 +15,14 @@ wie diese über einheitliche Schnittstellen bereitgestellt werden können.
 
 # Vorgehen 
 
-Um trotz fast 50 TeilnehmerInnen eine konstruktive Diskussion zu ermöglichen,
+Um den rund 50 TeilnehmerInnen eine konstruktive Diskussion zu ermöglichen,
 wurden Gruppen von etwa sechs Personen gebildet, deren MitgliederInnen zunächst
 einzeln und dann gemeinsam nach Anwendungsfällen suchen sollten.  Zur Erfassung
 der Ergebnisse gab es einzelne Formulare für Anwendungsfälle eines
 Normdaten-Iterfaces (GUI) oder einer Normdaten-API (Webservice).  Das an die so
-genannte "Design Studio Methode" angelehnte Verfahren besteht aus mehreren,
-zeitlich strikt begrenzten Phasen und ermöglichte es, innerhalb von 90 Minuten
-zahlreiche Anwendungsfälle und Anforderungen an Normdatendienste
+genannte "Design Studio Methode" angelehnte Entwicklungsmethode besteht aus
+mehreren, zeitlich strikt begrenzten Phasen und ermöglichte es, innerhalb von
+90 Minuten zahlreiche Anwendungsfälle und Anforderungen an Normdatendienste
 zusammenzustellen. Die begleitenden Folien enthalten eine Einleitung und fassen
 das Vorgehen zusammen [@Voss2016b].
  
