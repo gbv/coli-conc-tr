@@ -54,18 +54,16 @@ tr4:
 tr5:
     series: coli-conc report
     number: 5
-    title: ...
+    title: Umfrage zur Sacherschließung und Konkordanzprojekten
     author:
       - name: U. Balakrishnan
         email: balakrishnan@gbv.de
       - name: Jana Maria Agne
         email: agne@gbv.de
-      - name: Morsheda Akter
-        email: akter@gbv.de
         affiliation: Verbundzentrale des GBV (VZG)
     date: 2016-??-??
     doi: 10.5281/zenodo.?????
     license: CC-BY-SA
-    lang: en
-    language: english
+    lang: de
+    language: ngerman
 
