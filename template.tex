@@ -200,6 +200,7 @@ $if(title)$
 \title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
 $endif$
 $if(author)$
+
 \author{$for(author)$$author.name$$sep$ \and $endfor$}
 $endif$
 \date{$date$}
@@ -216,9 +217,8 @@ $if(title)$
 \vskip 0.5em
 {\usekomafont{author}{%
 $for(author)$
-$author.name$ $if(author.email)$<$author.email$>$endif$ \\
-$if(author.affiliation)$$author.affiliation$\\$endif$
-% TODO: sep between authors
+$author.name$ $if(author.email)$<$author.email$>$endif$
+$if(author.affiliation)$\\$author.affiliation$$endif$
 $endfor$
 }}%
 
