@@ -108,7 +108,7 @@ $endif$
   \tikz[page position=current page.north west]{
     \draw[color=ColiConcBrown,line width=2mm] (0mm,-3.2cm) to (\paperwidth,-3.2cm);
     % TODO: break long titles
-    \node[anchor=south west] at (2cm,-3cm) {\Large\upshape\textbf{$title$}};
+    \node[anchor=south west, text width=14.5cm] at (2cm,-3cm) {\Large\upshape\textbf{$title$}};
   }
   \tikz[page position=current page.north east]{
     \node[anchor=south east] at (-5mm,-3cm) {
@@ -155,7 +155,7 @@ $endif$
 \RedeclareSectionCommands[
   beforeskip=-.5\baselineskip,
   afterskip=.25\baselineskip
-]{section,subsection}
+]{section,subsection,subsubsection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
