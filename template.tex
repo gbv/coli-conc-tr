@@ -85,50 +85,64 @@ $endif$
 \usepackage{tikz}
 \definecolor{GBVblue}{RGB}{89,124,199}
 \definecolor{GBVdark}{RGB}{0,51,153}
-
-% TODO: VZG Logo
-% \pgfdeclareimage[height=10mm]{VZGLogo}{VZGLogo.eps}
-% Seitenlayout
+\definecolor{ColiConcBrown}{RGB}{193,78,00}
 
 \tikzset{page position/.style={remember picture,overlay,shift={(#1)}}}
 
 % Kopf- und Fußzeile
-\usepackage{scrpage2}
+\usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
-\clearscrheadfoot
+\clearpairofpagestyles
 
-\lohead{% Kopfzeile linke Seite
-  \tikz[page position=current page.north west]
-  \draw [fill,GBVblue] (0mm,-6.4mm) rectangle +(\paperwidth,-11mm);
-  \tikz[page position=current page.north east]
-  \node [anchor=east,text=white] at (-30mm,-11.9mm) { \upshape\textsf{$series$ $number$} };
-}
-\rehead{% Kopfzeile rechte Seite
-  \tikz[page position=current page.north west]
-  \draw [fill,GBVblue] (0mm,-6.4mm) rectangle +(\paperwidth,-11mm);
-  \tikz[page position=current page.north west]
-  \node [anchor=west,text=white] at (30mm,-11.9mm) { \upshape\textsf{$title$} };
+% Dreifachlinie
+\tikzset{triple line/.style={
+    color=ColiConcBrown,line width=0.2mm,
+    preaction={draw, color=white,line width=0.6mm,
+      preaction={draw,line width=1mm,color=ColiConcBrown}
+    }
+  }
 }
 
-% Seitenzahlen in Weiß
-\renewcommand{\pnumfont}{\color{white}\upshape}
+% Kopfzeile erste Seite (plain)
+\ohead[{
+  \tikz[page position=current page.north west]{
+    \draw[color=ColiConcBrown,line width=2mm] (0mm,-3.2cm) to (\paperwidth,-3.2cm);
+    % TODO: break long titles
+    \node[anchor=south west] at (2cm,-3cm) {\Large\upshape\textbf{$title$}};
+  }
+  \tikz[page position=current page.north east]{
+    \node[anchor=south east] at (-5mm,-3cm) {
+      \includegraphics[height=2cm]{coli-conc-logo.png}
+    };
+  }
+}]{}
 
-\cfoot{% Fußzeile: Linie
-  \tikz[page position=current page.south west]
-  \draw[draw=GBVblue,line width=0.5pt] (0,1cm) to +(\paperwidth,0);
+\lofoot*{% Fußzeile: Seitezahl rechts
+  \tikz[page position=current page.south east]{
+    \draw[triple line] (-4.5cm,2.75cm) to (-4.5cm,1.5cm);
+    \node[anchor=north west] at (-4.45cm,2.75cm) {\pagemark};
+  }
+  \tikz[page position=current page.south west]{
+    \node[anchor=north west,align=left] at (2cm,2.75cm) {
+      \upshape\textsf{$series$ $number$}\\
+      $title$
+    };
+  }
 }
-\lofoot{% Fußzeile: Seitezahl rechts
-  \tikz[page position=current page.south east]
-  \node[anchor=south east,fill=GBVblue,minimum height=0.25cm] at (-2.5cm,1cm) {\pagemark};
-}
-\refoot{% Fußzeile: Seitezahl links
-  \tikz[page position=current page.south west]
-  \node[anchor=south west,fill=GBVblue,minimum height=0.25cm] at (2.5cm,1cm) {\pagemark};
+\lefoot*{% Fußzeile: Seitezahl rechts
+  \tikz[page position=current page.south east]{
+    \draw[triple line] (-4.5cm,2.75cm) to (-4.5cm,1.5cm);
+    \node[anchor=north west] at (-4.45cm,2.75cm) {\pagemark};
+  }
+  \tikz[page position=current page.south west]{
+    \node[anchor=north west,align=left] at (2cm,2.75cm) {
+      \upshape\textsf{$series$ $number$}\\
+      $title$
+    };
+  }
 }
 
-% Schriftart: Calibri
-\usepackage{fontspec}
-\setmainfont{Calibri}
+% Überschriften in serifenloser Schrift
 \addtokomafont{disposition}{\rmfamily}
 
 % Schönere verbatim-Umgebung
@@ -209,24 +223,24 @@ $header-includes$
 $endfor$
 
 \begin{document}
+\thispagestyle{plain}
 
 $if(title)$
 \null
-\vskip 0.5em
-{\usekomafont{title}{\huge $title$ \par}}%
-\vskip 0.5em
-{\usekomafont{author}{%
+\vskip 6mm
+%{\usekomafont{title}{ $title$ \par}}%
+%\vskip 0.5em
+{\usekomafont{author}{\normalsize%
 $for(author)$
 $author.name$ $if(author.email)$<$author.email$>$endif$
 $if(author.affiliation)$\\$author.affiliation$$endif$
 $endfor$
 }}%
 
-$if(date)$$date$\\$endif$
-$if(doi)$DOI \href{http://dx.doi.org/$doi$}{$doi$}\\$endif$
-$if(license)$$license$ \\$endif$
+$date$ $if(license)$ $license$ $endif$\\
+$if(doi)$DOI \href{http://dx.doi.org/$doi$}{$doi$}$endif$
 
-$endif$
+$endif$% if(title)
 
 $if(abstract)$
 \begin{abstract}

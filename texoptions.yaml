@@ -5,4 +5,5 @@ classoption:
     - "twoside=semi"
     - "paper=a4"
     - "fontsize=12pt"
+mainfont: Calibri
 ...
