@@ -91,3 +91,18 @@ tr7:
     license: CC-BY-SA
     lang: en
     language: english
+tr8:
+    series: coli-conc report
+    number: 8
+    title: Ein Vergleich ausgewählter Normdatendienste
+    author:
+      - name: Moritz Horn
+        email: moritz.horn@gbv.de 
+      - name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2016-09-XX
+    doi: 10.5281/zenodo.XXXX
+    license: CC-BY-SA
+    lang: de
+    language: ngerman
