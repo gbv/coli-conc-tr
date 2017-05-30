@@ -65,6 +65,7 @@ tr5:
     license: CC-BY-SA
     lang: de
     language: ngerman
+    url: https://coli-conc.gbv.de/publications/EDUG2016Bericht.pdf
 tr6:
     series: coli-conc report
     number: 6
@@ -78,6 +79,7 @@ tr6:
     license: CC-BY-SA
     lang: de
     language: ngerman
+    url: https://coli-conc.gbv.de/publications/Umfrageergebnisse.pdf
 tr7:
     series: coli-conc report
     number: 7
@@ -94,6 +96,31 @@ tr7:
 tr8:
     series: coli-conc report
     number: 8
+    title: Zusammenfassung des Zwischenberichts
+    author:
+      - name: U. Balakrishnan
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2017-02-22
+    lang: de
+    language: ngerman
+    url: https://coli-conc.gbv.de/publications/coli-conczusammenfassung.pdf
+tr9:
+    series: coli-conc report
+    number: 9
+    title: Umfrage zur Basisklassifikation 2017
+    author:
+      - name: R. Beckmann
+        affiliation: Staatsbibliothek zu Berlin
+      - name: U. Balakrishnan
+      - name: J. Agne
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2017-05-03
+    lang: de
+    language: ngerman
+    url: https://si-it-workshop.gbv.de/wp-content/uploads/2017/01/BKUmfrage_Ergebnisse.pdf
+tr10:
+    series: coli-conc report
+    number: 10
     title: Ein Vergleich ausgewählter Normdatendienste
     author:
       - name: Moritz Horn
@@ -101,8 +128,9 @@ tr8:
       - name: Jakob Voß
         email: jakob.voss@gbv.de
         affiliation: Verbundzentrale des GBV (VZG)
-    date: 2016-09-XX
-    doi: 10.5281/zenodo.XXXX
+    date: 2017-05-31
+    doi: 10.5281/zenodo.800577
     license: CC-BY-SA
     lang: de
     language: ngerman
+
