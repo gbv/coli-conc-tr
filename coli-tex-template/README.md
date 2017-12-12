@@ -2,16 +2,20 @@
 <!-- Table of Contents Begin-->
 - [Introduction](#introduction)
   - [Installing LaTeX](#installing-latex)
-  - [Needed Packages](#needed-packages)
+    - [Linux](#linux)
+    - [Windows](#windows)
+    - [Mac OS](#mac-os)
 - [Directory Structure](#directory-structure)
 - [Meaning of Files](#meaning-of-files)
   - [Main Directory](#main-directory)
     - [README](#readme)
     - [bspdok-coliartcl.pdf](#bspdok-coliartcl)
     - [bspdok-colidok.pdf](#bspdok-colidok)
+    - [bspdok-colireport.pdf](#bspdok-colireport)
     - [bsptexte.tex](#bsptexte)
     - [coliartcl.tex](#coliartcl-tex)
     - [colidok.tex](#colidok-tex)
+    - [colireport.tex](#colireport-tex)
   - [basics/ Directory](#basics-directory)
     - [coli-conc-wave.jpg](#coli-conc-wave)
     - [vzg.png](#vzg)
@@ -26,9 +30,11 @@
   - [styles/ Directory](#styles-directory)
     - [coliartcl.cls](#coliartcl-cls)
     - [colidok.cls](#colidok-cls)
+    - [colireport.cls](#colireport-cls)
 - [How to start](#how-to-start)
   - [Writing an Article](#writing-an-article)
   - [Writing a Documentation](#writing-a-documentation)
+  - [Writing a Report](#writing-a-report)
   - [Alter Standard Information](#alter-standard-information)
   - [Add Figures](#add-figures)
   - [Add Tables](#add-tables)
@@ -37,14 +43,40 @@
     - [Alter Listings](#alter-listings)
   - [Add Bibliography Entries](#add-bibliography-entries)
     - [Citing](#citing)
-  - [Acronyms](#acronyms)
+  - [Using Acronyms](#acronyms)
   - [Glossary](#glossary)
 - [Useful Links](#useful-links)
 <!-- Table of Contents End-->
 
 
 # Introduction
-This directory contains the files needed to produce the Coli-conc style PDF files using TeX.
+This directory contains the files needed to produce the Coli-conc-style PDF files using TeX.
+
+## Installing Latex
+
+### Linux
+The most important TeX distribution is [TeX Live](http://www.tug.org/texlive/) which is provided on the [website](http://www.tug.org/texlive/acquire-netinstall.html). Nevertheless the most common way of installing it is via the paket manager of your Linux distribution. For Debian-based systems like Ubuntu the CLI commands would be
+```
+sudo apt-get install texlive texlive-lang-german texlive-latex-extra
+```
+to install the complete TeX-system, the German language files and some extra packages or
+```
+sudo apt-get install texlive-base
+```
+to install TeX fully, which means the download of a couple of hundreds megabyte.
+
+For other distributions just google the name of your distribution with ```latex installation```. E.g. the German [Ubuntu Wiki](https://wiki.ubuntuusers.de/TeX_Live/) provides these information too.
+The TeX Live documentation can be found [here](http://www.tug.org/texlive/doc.html).
+
+### Windows
+A common TeX distribution for Windows systems is [MiKTeX](https://miktex.org/). They provide an exe-file in the [download section of the website](https://miktex.org/download).
+There is also
+  - a [Tutorial](https://miktex.org/howto/install-miktex),
+  - a [Manual](https://docs.miktex.org/2.9/manual/) and
+  - a [FAQ](https://docs.miktex.org/faq/).
+
+### Mac OS
+Please follow the instructions at [Mac TeX](http://tug.org/mactex/).
 
 # Directory Structure
 ```
@@ -52,7 +84,8 @@ coli-tex-template
 │   README.md
 │   bsptexte.tex
 │   coliartcl.tex
-│   colidok.tex    
+│   colidok.tex
+    colireport.tex
 │
 └───basics/
 │   │   coli-conc-wave.png
@@ -76,6 +109,7 @@ coli-tex-template
 └───styles/
     │   coliartcl.cls
     │   colidok.cls
+        colireport.cls
 ```
 
 # Meaning of Files
@@ -91,6 +125,9 @@ To make an article like document as shown in [bspdok-coliartcl.pdf](bspdok-colia
 
 ### colidok-tex
 To make a more thesis like document like a documentation as shown in [bspdok-colidok.pdf](bspdok-colidok.pdf) the [colidok.tex](colidok.tex) file is used. It is based on the [KOMA (German)](https://komascript.de/) class [scrbook](https://ctan.org/pkg/scrbook).
+
+### colireport-tex
+
 
 ## basics Directory
 Contains the relevant files (setup, figures and bibliography) to generate the documents.
@@ -134,6 +171,9 @@ Generated example [PDF](documentation/bspdok-colidok.pdf) from the [colidok.tex]
 ![Screnshot of the Front Page of the colidok Template](documentation/colidok-main-screenshot.png)
 ![Screnshot of the Table of Contents of the colidok Template](documentation/colidok-content-screenshot.png)
 
+### bspdok-colireport
+
+
 ## figures Directory
 Currently contains the example file of Franz Kafka ([kafka.jpg](figures/kafka.jpg)) and is intended to store all used figures from a document to keep the main directory clearly arranged.
 It is not mandatory to use it.
@@ -144,6 +184,8 @@ The file [coliartcl.cls](styles/coliartcl.cls) is the class file that controls t
 
 ### colidok-cls
 The file [colidok.cls](styles/colidok.cls) is the class file that controls the definition and design of the Coli-conc documentation template. It is based on the [KOMA (German)](https://komascript.de/) class [scrbook](https://ctan.org/pkg/scrbook).
+
+### colireport-cls
 
 ***
 
@@ -160,6 +202,9 @@ There are many editors for LaTeX, so you will find some by googling for it. [TeX
 
 
 ## Writing a Documentation
+
+
+## Writing a Report
 
 
 ## Alter Standard Information
@@ -224,16 +269,18 @@ Publisher like Springer offer these BibTeX entries on their websites like on [Sp
 ## Acronyms
 Package Glossary
 
-## Glosary
-Package Glossarya
+## Glossary
+Package Glossary
 
 ***
 
 ## Useful Links
+- [Wikibooks: LaTeX-Kompendium (deutsch)](https://de.wikibooks.org/wiki/LaTeX-Kompendium)
+- [Wikibooks: LaTeX (english)](https://en.wikibooks.org/wiki/LaTeX)
 - [The LaTeX Project](https://www.latex-project.org/)
 - [The LaTeX Project User Guide (PDF)](https://www.latex-project.org/help/documentation/usrguide.pdf)
 - [TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/)
-- Citavi
-- Mendeley
-- Zotero
--
+- [Citavi (deutsch)](https://www.citavi.com/de/)
+- [Citavi (english)](https://www.citavi.com/de/)
+- [Mendeley](https://www.mendeley.com/)
+- [Zotero](https://www.zotero.org/)

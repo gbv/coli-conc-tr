@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+@keyframes RotatingBackground {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+.gutter[gutter-name=diagnostics-gutter] {
+  width: 0.7em;
+}
+.diagnostics-gutter-ui-item {
+  display: flex;
+}
+.diagnostics-gutter-ui-item .icon {
+  display: flex;
+  width: 0.7em;
+  height: 0.7em;
+  font-size: 0.7em;
+  align-self: center;
+}
+.diagnostics-gutter-ui-item .icon::before {
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  margin: 0;
+  align-self: center;
+}
+.diagnostics-gutter-ui-item.diagnostics-gutter-ui-gutter-action,
+.diagnostics-gutter-ui-item.diagnostics-gutter-ui-gutter-info,
+.diagnostics-gutter-ui-item.diagnostics-gutter-ui-gutter-review {
+  color: #6494ed;
+}
+.diagnostics-gutter-ui-item.diagnostics-gutter-ui-gutter-error {
+  color: #ff6347;
+}
+.diagnostics-gutter-ui-item.diagnostics-gutter-ui-gutter-warning {
+  color: #e2c08d;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="instruction-on-how-to-use-the-coli-conc-tex-template">Instruction on how to use the Coli-conc TeX Template</h1>
+<!-- Table of Contents Begin-->
+<ul>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#installing-latex">Installing LaTeX</a><ul>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#mac-os">Mac OS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#directory-structure">Directory Structure</a></li>
+<li><a href="#meaning-of-files">Meaning of Files</a><ul>
+<li><a href="#main-directory">Main Directory</a><ul>
+<li><a href="#readme">README</a></li>
+<li><a href="#bspdok-coliartcl">bspdok-coliartcl.pdf</a></li>
+<li><a href="#bspdok-colidok">bspdok-colidok.pdf</a></li>
+<li><a href="#bsptexte">bsptexte.tex</a></li>
+<li><a href="#coliartcl-tex">coliartcl.tex</a></li>
+<li><a href="#colidok-tex">colidok.tex</a></li>
+</ul>
+</li>
+<li><a href="#basics-directory">basics/ Directory</a><ul>
+<li><a href="#coli-conc-wave">coli-conc-wave.jpg</a></li>
+<li><a href="#vzg">vzg.png</a></li>
+<li><a href="#bibliography">bibliography.bib</a></li>
+<li><a href="#input">input.tex</a></li>
+<li><a href="#setup">setup.tex</a></li>
+<li><a href="#setup-allg">setup-allg.tex</a></li>
+<li><a href="#setup-colidok">setup-colidok.tex</a></li>
+</ul>
+</li>
+<li><a href="#documentation-directory">documentation/ Direcoty</a></li>
+<li><a href="#figures-directory">figures/ Directory</a><ul>
+<li><a href="#kafka">kafka.jpg</a></li>
+</ul>
+</li>
+<li><a href="#styles-directory">styles/ Directory</a><ul>
+<li><a href="#coliartcl-cls">coliartcl.cls</a></li>
+<li><a href="#colidok-cls">colidok.cls</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#how-to-start">How to start</a><ul>
+<li><a href="#writing-an-article">Writing an Article</a></li>
+<li><a href="#writing-a-documentation">Writing a Documentation</a></li>
+<li><a href="#alter-standard-information">Alter Standard Information</a></li>
+<li><a href="#add-figures">Add Figures</a></li>
+<li><a href="#add-tables">Add Tables</a><ul>
+<li><a href="#alter-tables">Alter Tables</a></li>
+</ul>
+</li>
+<li><a href="#add-listings">Add Listings</a><ul>
+<li><a href="#alter-listings">Alter Listings</a></li>
+</ul>
+</li>
+<li><a href="#add-bibliography-entries">Add Bibliography Entries</a><ul>
+<li><a href="#citing">Citing</a></li>
+</ul>
+</li>
+<li><a href="#acronyms">Using Acronyms</a></li>
+<li><a href="#glossary">Glossary</a></li>
+</ul>
+</li>
+<li><a href="#useful-links">Useful Links</a><!-- Table of Contents End-->
+</li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>This directory contains the files needed to produce the Coli-conc-style PDF files using TeX.</p>
+<h2 id="installing-latex">Installing Latex</h2>
+<h3 id="linux">Linux</h3>
+<p>The most important TeX distribution is <a href="http://www.tug.org/texlive/">TeX Live</a> which is provided on the <a href="http://www.tug.org/texlive/acquire-netinstall.html">website</a>. Nevertheless the most common way of installing it is via the paket manager of your Linux distribution. For Debian-based systems like Ubuntu the CLI commands would be</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>sudo&nbsp;apt-get&nbsp;install&nbsp;texlive&nbsp;texlive-lang-german&nbsp;texlive-latex-extra</span></span></span></div></pre><p>to install the complete TeX-system, the German language files and some extra packages or</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>sudo&nbsp;apt-get&nbsp;install&nbsp;texlive-base</span></span></span></div></pre><p>to install TeX fully, which means the download of a couple of hundreds megabyte.</p>
+<p>For other distributions just google the name of your distribution with <code>latex installation</code>. E.g. the German <a href="https://wiki.ubuntuusers.de/TeX_Live/">Ubuntu Wiki</a> provides these information too.
+The TeX Live documentation can be found <a href="http://www.tug.org/texlive/doc.html">here</a>.</p>
+<h3 id="windows">Windows</h3>
+<p>A common TeX distribution for Windows systems is <a href="https://miktex.org/">MiKTeX</a>. They provide an exe-file in the <a href="https://miktex.org/download">download section of the website</a>.
+There is also</p>
+<ul>
+<li>a <a href="https://miktex.org/howto/install-miktex">Tutorial</a>,</li>
+<li>a <a href="https://docs.miktex.org/2.9/manual/">Manual</a> and</li>
+<li>a <a href="https://docs.miktex.org/faq/">FAQ</a>.</li>
+</ul>
+<h3 id="mac-os">Mac OS</h3>
+<p>Please follow the instructions at <a href="http://tug.org/mactex/">Mac TeX</a>.</p>
+<h1 id="directory-structure">Directory Structure</h1>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>coli-tex-template</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;README.md</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;bsptexte.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;colidok.tex&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───basics/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coli-conc-wave.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;vzg.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bibliography.bib</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;input.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-allg.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-colidok.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───documentation/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-coliartcl.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-colidok.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coliartcl-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-content-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-main-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───figures/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;kafka.jpg</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───styles/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.cls</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok.cls</span></span></span></div></pre><h1 id="meaning-of-files">Meaning of Files</h1>
+<h2 id="main-directory">Main Directory</h2>
+<h3 id="readme">README</h3>
+<p><a href="README.md">This file you are currently reading</a>.</p>
+<h3 id="bsptexte">bsptexte</h3>
+<p>File with random text snippets to fill the <a href="bspdok-colidok.tex">bspdok-colidok.tex</a> with life. The basic document structure can be seen here (<code>chapter</code>, <code>section</code> and <code>subsection</code>). It also shows how to include figures, tables and source code listings which are explained to detail in <a href="#add-figures">Add Figures</a>, <a href="#add-tables">Add Tables</a> and <a href="#add-listings">Add Listings</a>.</p>
+<h3 id="coliartcl-tex">coliartcl-tex</h3>
+<p>To make an article like document as shown in <a href="bspdok-coliartcl.pdf">bspdok-coliartcl.pdf</a> the <a href="coliartcl.tex">coliartcl.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
+<h3 id="colidok-tex">colidok-tex</h3>
+<p>To make a more thesis like document like a documentation as shown in <a href="bspdok-colidok.pdf">bspdok-colidok.pdf</a> the <a href="colidok.tex">colidok.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrbook">scrbook</a>.</p>
+<h2 id="basics-directory">basics Directory</h2>
+<p>Contains the relevant files (setup, figures and bibliography) to generate the documents.</p>
+<h3 id="coli-conc-wave">coli-conc-wave</h3>
+<p><img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/basics/coli-conc-wave.png" alt="Coli-conc Wave"></p>
+<h3 id="vzg">vzg</h3>
+<p><img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/basics/vzg.png" alt="VZG Logo"></p>
+<h3 id="bibliography">bibliography</h3>
+<p>The file <a href="basics/bibliography.bib">bibliography.bib</a> contains the BibTeX formatted information about publications.</p>
+<h3 id="input">input</h3>
+<p>The file <a href="basics/input.tex">input.tex</a> contains the information that has to be altered by the user. These parts are beginning with <code>% FIXME</code>.</p>
+<h3 id="setup">setup</h3>
+<p>The file <a href="basics/setup.tex">setup.tex</a> contains the information about the used packages.</p>
+<ul>
+<li>Also the Listings are defined here which can be altered.
+<span style="color:red"><strong>(Should be moved to <a href="basics/input.tex">input.tex</a>).</strong></span></li>
+</ul>
+<h3 id="setup-allg">setup-allg</h3>
+<p>The file <a href="basics/setup-allg.tex">setup-allg.tex</a> contains all packages that are needed for both templates.</p>
+<ul>
+<li><span style="color:red"><strong>(Should be moved to <a href="basics/setup.tex">setup.tex</a>).</strong></span></li>
+</ul>
+<h3 id="setup-colidok">setup-colidok</h3>
+<p>The file <a href="basics/setup-colidok.tex">setup-colidok.tex</a> contains additional definitions and packages that are needed for the documentation style template. The part in the <em>Header and Footer</em> section of the file that is marked with <code>% FIXME</code> needs to be altered.</p>
+<ul>
+<li>Multibib <span style="color:red"><strong>(Should be removed).</strong></span></li>
+<li>Header and Footer <span style="color:red"><strong>(Should be moved to <a href="basics/input.tex">input.tex</a>).</strong></span></li>
+</ul>
+<h2 id="documentation-directory">documentation Directory</h2>
+<p>Contains the files that are used in this documentation (e.g. Screenshots). Not relevant for the using of the TeX files.</p>
+<h3 id="bspdok-coliartcl">bspdok-coliartcl</h3>
+<p>Generated example <a href="documentation/bspdok-coliartcl.pdf">PDF</a> from the <a href="coliartcl.tex">coliartcl.tex</a>.
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/coliartcl-screenshot.png" alt="Screnshot of the Front Page of the coliartcl Template"></p>
+<h3 id="bspdok-colidok">bspdok-colidok</h3>
+<p>Generated example <a href="documentation/bspdok-colidok.pdf">PDF</a> from the <a href="colidok.tex">colidok.tex</a>.
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-main-screenshot.png" alt="Screnshot of the Front Page of the colidok Template">
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-content-screenshot.png" alt="Screnshot of the Table of Contents of the colidok Template"></p>
+<h2 id="figures-directory">figures Directory</h2>
+<p>Currently contains the example file of Franz Kafka (<a href="figures/kafka.jpg">kafka.jpg</a>) and is intended to store all used figures from a document to keep the main directory clearly arranged.
+It is not mandatory to use it.</p>
+<h2 id="styles-directory">styles Directory</h2>
+<h3 id="coliartcl-cls">coliartcl-cls</h3>
+<p>The file <a href="styles/coliartcl.cls">coliartcl.cls</a> is the class file that controls the definition and design of the Coli-conc article template. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
+<h3 id="colidok-cls">colidok-cls</h3>
+<p>The file <a href="styles/colidok.cls">colidok.cls</a> is the class file that controls the definition and design of the Coli-conc documentation template. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrbook">scrbook</a>.</p>
+<hr>
+<h1 id="how-to-start">How to start</h1>
+<p>A general good start on using LaTeX can be found on Wikibooks:</p>
+<ul>
+<li><a href="https://de.wikibooks.org/wiki/LaTeX-Kompendium">German Version</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">English Version</a></li>
+</ul>
+<p>You may need to install it on your machine and general information about this can be found <a href="https://www.latex-project.org/get/">here</a>.</p>
+<p>There are many editors for LaTeX, so you will find some by googling for it. <a href="https://www.texstudio.org/">TeXStudio</a> is a very good start and available for various Windows, Linux, OS/2 and MacOS operating systems from the <a href="https://www.texstudio.org/#download">download page</a>.</p>
+<h2 id="writing-an-article">Writing an Article</h2>
+<h2 id="writing-a-documentation">Writing a Documentation</h2>
+<h2 id="alter-standard-information">Alter Standard Information</h2>
+<p>The file <a href="basics/input.tex">input.tex</a> contains the information that has to be altered by the user. These parts are beginning with <code>% FIXME</code>.</p>
+<p>If you use the documentation template you need to alter the <em>Header and Footer</em> information in <a href="basics/setup-colidok.tex">setup-colidok.tex</a> that is marked with <code>% FIXME</code>.</p>
+<h2 id="add-figures">Add Figures</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{figure}[tbph]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\centering</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\includegraphics[width=0.7\linewidth]{./figures/kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\caption[Kafka]{Portrait&nbsp;von&nbsp;Franz&nbsp;Kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\label{fig:kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{figure}</span></span></span></div></pre><h2 id="add-tables">Add Tables</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{table}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\centering</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\begin{tabular}{lll}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\textbf{Überschrift&nbsp;1}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;2}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;3}&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&amp;&nbsp;B&nbsp;&amp;&nbsp;C&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&amp;&nbsp;2&nbsp;&amp;&nbsp;3&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;&amp;&nbsp;b&nbsp;&amp;&nbsp;c&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;&amp;&nbsp;ii&nbsp;&amp;&nbsp;iii&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{tabular}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\caption{Eine&nbsp;dreispaltige&nbsp;Tabelle}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\label{tab:threecols}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{table}</span></span></span></div></pre><h3 id="alter-tables">Alter Tables</h3>
+<h2 id="add-listings">Add Listings</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{lstlisting}[language=Java,&nbsp;caption=Java&nbsp;example,&nbsp;label=lst:java]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>class&nbsp;Hallo&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>public&nbsp;static&nbsp;void&nbsp;main(&nbsp;String[]&nbsp;args&nbsp;)&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>System.out.print(&quot;Hallo&nbsp;Welt!&quot;);</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{lstlisting}</span></span></span></div></pre><h3 id="alter-listings">Alter Listings</h3>
+<h2 id="add-bibliography-entries">Add Bibliography Entries</h2>
+<p>Conversion into BibTeX entries can be done using an online tool like the <a href="http://truben.no/latex/bibtex/">BibTeX Online Editor</a> or <a href="https://arxiv2bibtex.org/">arXiv To BibTex</a>.</p>
+<p>If you are using <a href="https://www.citavi.com/">Citavi</a>, <a href="https://www.zotero.org/">Zotero</a> or <a href="https://www.mendeley.com/">Mendeley</a> just consult their manuals on how to export the BibTeX entries from there.</p>
+<ul>
+<li><a href="https://service.citavi.com/kb/a374/70001-your-support-options.aspx">Citavi Manual Page (English)</a></li>
+<li><a href="https://service.citavi.com/kb/a373/70001-citavi-support-angebote.aspx">Citavi Manual Page (German)</a></li>
+<li><a href="https://www.zotero.org/support/">Zotero Manual Page (English)</a></li>
+<li><a href="https://www.zotero.org/support/de/start">Zotero Manual Page (German)</a></li>
+<li><a href="https://www.mendeley.com/guides">Mendeley Maual Page (English)</a></li>
+</ul>
+<p>Publisher like Springer offer these BibTeX entries on their websites like on <a href="https://link.springer.com">Springer Link</a>, some libraries offer these entries too.</p>
+<h2 id="acronyms">Acronyms</h2>
+<p>Package Glossary</p>
+<h2 id="glosary">Glosary</h2>
+<p>Package Glossarya</p>
+<hr>
+<h2 id="useful-links">Useful Links</h2>
+<ul>
+<li><a href="https://www.latex-project.org/">The LaTeX Project</a></li>
+<li><a href="https://www.latex-project.org/help/documentation/usrguide.pdf">The LaTeX Project User Guide (PDF)</a></li>
+<li><a href="https://tex.stackexchange.com/">TeX - LaTeX Stack Exchange</a></li>
+<li>Citavi</li>
+<li>Mendeley</li>
+<li>Zotero
+-</li>
+</ul></body>
+</html>
