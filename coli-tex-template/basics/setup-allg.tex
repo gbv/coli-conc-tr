@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now we can start to load the packages needed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% Testing  %%%%%%%%%%
+% provides Lorem Ipsum blindtext
+\usepackage{lipsum}
+
+
+%%%%%%%%%% General      %%%%%%%%%%
+% koma comes with more advanced handling of tocs, scrhack
+% makes other packages like listings work with that
+% TODO this might cause problems with updated packages
+\usepackage{scrhack}
+% we want to support both pdfLaTeX and XeLaTeX
+% TODO consider luaTeX as well
+\usepackage{ifxetex}
+% language settings, output-encoding
+% localisation (languages set in document directive):
+\usepackage{babel}
+% % TODO context sensitive quotes, investigate for biblatex
+% \usepackage{csquotes}
+% input encoding to support diacritics
+\usepackage[utf8]{inputenc}
+% output encoding:
+\usepackage[T1]{fontenc}
+% acronym list
+\usepackage[printonlyused]{acrony
+
+
+%%%%%%%%%% Look & Feel  %%%%%%%%%%
+% define colors as you need them
+\usepackage{color}
+% nicer headings/footer:
+\usepackage{scrpage2}
+% typeset URLs nicely:
+\usepackage[hyphens]{url}
+% extended table environment:
+\usepackage{tabularx}
+% % colours in tables:
+% \usepackage{colortbl}
+% % booktabs for nice looking tables
+% \usepackage{booktabs}
+% used for adapting list environment, e.g. for glossaries:
+\usepackage{enumitem}
+% include source code listings in the text:
+\usepackage{listings}
+
+\usepackage{multicol}
+
+%%%%%%%%%% Graphics     %%%%%%%%%%
+% we need to be able to include graphics:
+\usepackage{graphicx}
+% we use colours in tables etc.:
+\usepackage[dvipsnames,usenames]{xcolor}
+% TikZ is cool for diagrams:
+\usepackage{tikz}
+% these 2 packages can be used to generate
+% graphs & tables from tabular data:
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+% pinning to specific pgfplots version
+\pgfplotsset{compat=1.8}
+% make text flow around images
+% \usepackage{picins}
+
+%%%%%%%%%% Color Definitions %%%%%
+% color definitions for listings (example in java)
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+% color definitions corporate design vzg and coli-conc
+\definecolor{vzgheadline}{RGB}{0,102,102}
+\definecolor{vzgpetrol}{RGB}{47,140,144}
+\definecolor{vzgblue}{RGB}{84,128,187}
+\definecolor{coliorange}{HTML}{C14E00}
+\definecolor{coliblack}{HTML}{393939}
+\definecolor{coligrey}{HTML}{E3E3DF}
+
+%%%%%%%%%% lstset Definitions %%%%%
+\lstset{language=Java,
+  frame=single,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  captionpos=b,
+  nolol=false,
+  numbers=left,
+  numbersep=5pt,
+  numberstyle=\tiny\color{pgrey},
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{\$\$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+%%%%%%%%%% Bib          %%%%%%%%%%
+% allows us to use author-year styles:
+\usepackage[round,colon,sort]{natbib}
+% \usepackage{natbib}
+% allows to have a separate bibliography for weblinks (or more):
+\usepackage{multibib}
+
+%%%%%%%%%% Other        %%%%%%%%%%
+% % is already loaded automatically:
+% \usepackage{calc}
+% % do we want an index?
+% \usepackage{makeidx}
+% include hyperlinks in PDF and much more:
+% FIXME Chose between coloured or black
+\usepackage[
+  colorlinks=true,
+  linkcolor=coliorange,
+  menucolor=coliorange,
+  citecolor=coliorange,
+  urlcolor=coliorange,
+]{hyperref}
+\hypersetup{linktoc=all}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   lists of... and captions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% for listings, we define the names used in the captions
+% and in the list of listings
+% we also take the -verzeichnis out of the list of
+% figures and list of tables
+% TODO differences in defined languages/babel; Text formating
+\AtBeginDocument{%
+  \makeatletter
+    \addto\captionsngerman{%
+      \def\lstlistingname{Quelltext}%
+      \def\lstlistlistingname{Quelltexte}%
+%       \renewcommand{\listfigurename}{\normalfont\rmfamily Abbildungen}%
+%       \renewcommand{\listtablename}{\normalfont\rmfamily Tabellen}%
+      \renewcommand{\listfigurename}{Abbildungen}%
+      \renewcommand{\listtablename}{Tabellen}%
+    }%
+  \makeatother
+}
+% % for other than KOMA classes, the following may have
+% % to be used instead:
+% \renewcommand*{\lstlistlistingname}{Quelltexte}
+% \renewcommand*{\lstlistingname}{Quelltexte}
+
+% captions should be set in a small font size
+\addtokomafont{caption}{\footnotesize}
+% \addtokomafont{captionlabel}{\bfseries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   General changes to formatting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% this is the KOMA-way of changing titles.
+%\setkomafont{sectioning}{\rmfamily\bfseries}
+\setkomafont{disposition}{\color{coliorange}\rmfamily\bfseries}
+  
+% we want an url to be printed in the standard font
+\urlstyle{same}

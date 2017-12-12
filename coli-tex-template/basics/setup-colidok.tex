@@ -1,0 +1,61 @@
+% this makes ``References'' a section instead of a chapter
+% this has to be done before other packages mess around
+% with the definition
+\makeatletter
+\renewcommand*\bib@heading{%
+	\section*{\bibname}%
+	\@mkboth{\bibname}{\bibname}%
+}
+
+% Change colour of superscriptes numbers from footnotes
+\renewcommand\@makefnmark{\hbox{
+  \@textsuperscript{\normalfont\color{coliorange}\@thefnmark}}
+}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up header and footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\renewcommand{\headfont}{\normalfont\rmfamily\itshape}
+\ohead{\headmark}
+% FIXME choose between english and german version
+\lofoot[Coli-conc Report No. n]{Coli-conc Report No. n}
+% \lofoot[Coli-conc Report Nr. n]{Coli-conc Report Nr. n}
+\ofoot[\pagemark]{\pagemark}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up citation styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% we use multibib.sty to generate a weblinks bibliography,
+% define more as you see fit (Software, RFCs, Images)
+\newcites{web}{Weblinks}
+% % FIXME If you use several bibliographies, you need to run
+% % all of them through bibTeX. This can be achieved with the
+% % following script (for Unix, Mac, and Linux):
+% #!/bin/bash
+% for file in *.aux ; do
+%   bibtex `basename $file .aux`
+% done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% float control
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% more sensible defaults for how much space floats can take
+% up on pages with text:
+% http://www.tug.org/texmf-dist/doc/generic/FAQ-en/html/FAQ-floats.html
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\dbltopfraction}{.7}
+\renewcommand{\dblfloatpagefraction}{.7}
