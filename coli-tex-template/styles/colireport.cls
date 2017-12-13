@@ -29,13 +29,6 @@
 }
 
 
-%The next command sets up an environment for the abstract to your paper.
-%\newenvironment{coliabstract}{%
-%	\begin{quote} \bf}
-%	{\end{quote}
-%}
-
-
 % If your reference list includes text notes as well as references,
 % include the following line; otherwise, comment it out.
 \renewcommand\refname{References and Notes}
