@@ -3,10 +3,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % FIXME enter document title
-\newcommand{\colititle}{Coli-conc Article Template}
+\newcommand{\colititle}{Coli-conc Documentation Template}
 
 % FIXME enter the subject(s) divided by comma
-\newcommand{\colisubject}{Template, VZG, Coli-conc, Article}
+\newcommand{\colisubject}{Template, VZG, Coli-conc, Documentation}
 
 % FIXME real date of delivery. \today is todays date as dd. MM yyyy
 \newcommand{\colidate}{\today}
@@ -29,9 +29,6 @@
 
 % FIXME enter the report number
 \newcommand{\colireportno}{11}
-
-% nothing to enter here!
-\newcommand{\colifooter}{\colititle \colireportlang \colireportno}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,6 +58,14 @@
 % \newcommand{\colitexttype}{Technical Documentation}
 \newcommand{\colitexttype}{Technische Dokumentation}
 
+% FIXME (un)mark what you need/want
+% text type + enumeration
+% \newcommand{\colidokfooter}{\colitexttype~\colireportlang~\colireportno}
+% only text type
+% \newcommand{\colidokfooter}{\colitexttype}
+% only title
+\newcommand{\colidokfooter}{\colititle}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   For coli-report only
@@ -68,6 +73,9 @@
 
 % FIXME enter the DOI address
 \newcommand{\colidoi}{<DOI Nummer>}
+
+% nothing to enter here!
+\newcommand{\colifooter}{\colititle \colireportlang \colireportno}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
