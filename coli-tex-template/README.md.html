@@ -582,9 +582,11 @@ pre.editor-colors .fold-marker:after {
 <li><a href="#readme">README</a></li>
 <li><a href="#bspdok-coliartcl">bspdok-coliartcl.pdf</a></li>
 <li><a href="#bspdok-colidok">bspdok-colidok.pdf</a></li>
+<li><a href="#bspdok-colireport">bspdok-colireport.pdf</a></li>
 <li><a href="#bsptexte">bsptexte.tex</a></li>
 <li><a href="#coliartcl-tex">coliartcl.tex</a></li>
 <li><a href="#colidok-tex">colidok.tex</a></li>
+<li><a href="#colireport-tex">colireport.tex</a></li>
 </ul>
 </li>
 <li><a href="#basics-directory">basics/ Directory</a><ul>
@@ -592,7 +594,6 @@ pre.editor-colors .fold-marker:after {
 <li><a href="#vzg">vzg.png</a></li>
 <li><a href="#bibliography">bibliography.bib</a></li>
 <li><a href="#input">input.tex</a></li>
-<li><a href="#setup">setup.tex</a></li>
 <li><a href="#setup-allg">setup-allg.tex</a></li>
 <li><a href="#setup-colidok">setup-colidok.tex</a></li>
 </ul>
@@ -605,28 +606,21 @@ pre.editor-colors .fold-marker:after {
 <li><a href="#styles-directory">styles/ Directory</a><ul>
 <li><a href="#coliartcl-cls">coliartcl.cls</a></li>
 <li><a href="#colidok-cls">colidok.cls</a></li>
+<li><a href="#colireport-cls">colireport.cls</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#how-to-start">How to start</a><ul>
-<li><a href="#writing-an-article">Writing an Article</a></li>
-<li><a href="#writing-a-documentation">Writing a Documentation</a></li>
 <li><a href="#alter-standard-information">Alter Standard Information</a></li>
 <li><a href="#add-figures">Add Figures</a></li>
-<li><a href="#add-tables">Add Tables</a><ul>
-<li><a href="#alter-tables">Alter Tables</a></li>
-</ul>
-</li>
-<li><a href="#add-listings">Add Listings</a><ul>
-<li><a href="#alter-listings">Alter Listings</a></li>
-</ul>
-</li>
+<li><a href="#add-tables">Add Tables</a></li>
+<li><a href="#add-listings">Add Listings</a></li>
 <li><a href="#add-bibliography-entries">Add Bibliography Entries</a><ul>
 <li><a href="#citing">Citing</a></li>
 </ul>
 </li>
-<li><a href="#acronyms">Using Acronyms</a></li>
+<li><a href="#acronyms">Acronyms</a></li>
 <li><a href="#glossary">Glossary</a></li>
 </ul>
 </li>
@@ -653,16 +647,18 @@ There is also</p>
 <h3 id="mac-os">Mac OS</h3>
 <p>Please follow the instructions at <a href="http://tug.org/mactex/">Mac TeX</a>.</p>
 <h1 id="directory-structure">Directory Structure</h1>
-<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>coli-tex-template</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;README.md</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;bsptexte.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;colidok.tex&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───basics/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coli-conc-wave.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;vzg.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bibliography.bib</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;input.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-allg.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-colidok.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───documentation/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-coliartcl.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-colidok.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coliartcl-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-content-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-main-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───figures/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;kafka.jpg</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───styles/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.cls</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok.cls</span></span></span></div></pre><h1 id="meaning-of-files">Meaning of Files</h1>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>coli-tex-template</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;README.md</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;bsptexte.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;colidok.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;colireport.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───basics/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coli-conc-wave.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;vzg.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bibliography.bib</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;input.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-allg.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;setup-colidok.tex</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───documentation/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-coliartcl.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-colidok.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;bspdok-colireport.pdf</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;coliartcl-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-content-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok-main-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colireport-front-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colireport-second-screenshot.png</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───figures/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;kafka.jpg</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>│</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>└───styles/</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>│&nbsp;&nbsp;&nbsp;coliartcl.cls</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colidok.cls</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;colireport.cls</span></span></span></div></pre><h1 id="meaning-of-files">Meaning of Files</h1>
 <h2 id="main-directory">Main Directory</h2>
 <h3 id="readme">README</h3>
 <p><a href="README.md">This file you are currently reading</a>.</p>
 <h3 id="bsptexte">bsptexte</h3>
 <p>File with random text snippets to fill the <a href="bspdok-colidok.tex">bspdok-colidok.tex</a> with life. The basic document structure can be seen here (<code>chapter</code>, <code>section</code> and <code>subsection</code>). It also shows how to include figures, tables and source code listings which are explained to detail in <a href="#add-figures">Add Figures</a>, <a href="#add-tables">Add Tables</a> and <a href="#add-listings">Add Listings</a>.</p>
 <h3 id="coliartcl-tex">coliartcl-tex</h3>
-<p>To make an article like document as shown in <a href="bspdok-coliartcl.pdf">bspdok-coliartcl.pdf</a> the <a href="coliartcl.tex">coliartcl.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
+<p>To make an article like document as shown in <a href="documentation/bspdok-coliartcl.pdf">bspdok-coliartcl.pdf</a> the <a href="coliartcl.tex">coliartcl.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
 <h3 id="colidok-tex">colidok-tex</h3>
-<p>To make a more thesis like document like a documentation as shown in <a href="bspdok-colidok.pdf">bspdok-colidok.pdf</a> the <a href="colidok.tex">colidok.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrbook">scrbook</a>.</p>
+<p>To make a more thesis like document like a documentation as shown in <a href="documentation/bspdok-colidok.pdf">bspdok-colidok.pdf</a> the <a href="colidok.tex">colidok.tex</a> file is used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrbook">scrbook</a>.</p>
+<h3 id="colireport-tex">colireport-tex</h3>
+<p>To make a report with a style nearly like the old Coli-conc reports as shown in <a href="documentation/bspdok-report.pdf">bspdok-report.pdf</a> the <a href="colireport.tex">colireport.tex</a> file has to be used. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
 <h2 id="basics-directory">basics Directory</h2>
 <p>Contains the relevant files (setup, figures and bibliography) to generate the documents.</p>
 <h3 id="coli-conc-wave">coli-conc-wave</h3>
@@ -672,33 +668,30 @@ There is also</p>
 <h3 id="bibliography">bibliography</h3>
 <p>The file <a href="basics/bibliography.bib">bibliography.bib</a> contains the BibTeX formatted information about publications.</p>
 <h3 id="input">input</h3>
-<p>The file <a href="basics/input.tex">input.tex</a> contains the information that has to be altered by the user. These parts are beginning with <code>% FIXME</code>.</p>
-<h3 id="setup">setup</h3>
-<p>The file <a href="basics/setup.tex">setup.tex</a> contains the information about the used packages.</p>
-<ul>
-<li>Also the Listings are defined here which can be altered.
-<span style="color:red"><strong>(Should be moved to <a href="basics/input.tex">input.tex</a>).</strong></span></li>
-</ul>
+<p>The file <a href="basics/input.tex">input.tex</a> contains the information that has to be altered by the user. These parts are beginning with <code>% FIXME</code>.
+This includes the Listings which are defined here and can be altered too.</p>
 <h3 id="setup-allg">setup-allg</h3>
 <p>The file <a href="basics/setup-allg.tex">setup-allg.tex</a> contains all packages that are needed for both templates.</p>
-<ul>
-<li><span style="color:red"><strong>(Should be moved to <a href="basics/setup.tex">setup.tex</a>).</strong></span></li>
-</ul>
 <h3 id="setup-colidok">setup-colidok</h3>
-<p>The file <a href="basics/setup-colidok.tex">setup-colidok.tex</a> contains additional definitions and packages that are needed for the documentation style template. The part in the <em>Header and Footer</em> section of the file that is marked with <code>% FIXME</code> needs to be altered.</p>
-<ul>
-<li>Multibib <span style="color:red"><strong>(Should be removed).</strong></span></li>
-<li>Header and Footer <span style="color:red"><strong>(Should be moved to <a href="basics/input.tex">input.tex</a>).</strong></span></li>
-</ul>
+<p>The file <a href="basics/setup-colidok.tex">setup-colidok.tex</a> contains additional definitions and packages that are needed for the documentation style template.</p>
 <h2 id="documentation-directory">documentation Directory</h2>
 <p>Contains the files that are used in this documentation (e.g. Screenshots). Not relevant for the using of the TeX files.</p>
 <h3 id="bspdok-coliartcl">bspdok-coliartcl</h3>
 <p>Generated example <a href="documentation/bspdok-coliartcl.pdf">PDF</a> from the <a href="coliartcl.tex">coliartcl.tex</a>.
-<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/coliartcl-screenshot.png" alt="Screnshot of the Front Page of the coliartcl Template"></p>
+Screenshot of the Front Page of the coliartcl Template:
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/coliartcl-screenshot.png" alt="Screenshot of the Front Page of the coliartcl Template"></p>
 <h3 id="bspdok-colidok">bspdok-colidok</h3>
 <p>Generated example <a href="documentation/bspdok-colidok.pdf">PDF</a> from the <a href="colidok.tex">colidok.tex</a>.
-<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-main-screenshot.png" alt="Screnshot of the Front Page of the colidok Template">
-<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-content-screenshot.png" alt="Screnshot of the Table of Contents of the colidok Template"></p>
+Screenshot of the Front Page of the colidok Template:
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-main-screenshot.png" alt="Screenshot of the Front Page of the colidok Template">
+Screenshot of the Table of Contents of the colidok Template:
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colidok-content-screenshot.png" alt="Screenshot of the Table of Contents of the colidok Template"></p>
+<h3 id="bspdok-colireport">bspdok-colireport</h3>
+<p>Generated example <a href="documentation/bspdok-colireport.pdf">PDF</a> from the <a href="colireport.tex">colireport.tex</a>.
+Screenshot of the Front Page of the colireport Template:
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colireport-front-screenshot.png" alt="Screenshot of the Front Page of the colireport Template">
+Screenshot of the second Page of the colireport Template:
+<img src="/home/niklas/Dokumente/Github/coli-conc-tr/coli-tex-template/documentation/colireport-second-screenshot.png" alt="Screenshot of the second Page of the colireport Template"></p>
 <h2 id="figures-directory">figures Directory</h2>
 <p>Currently contains the example file of Franz Kafka (<a href="figures/kafka.jpg">kafka.jpg</a>) and is intended to store all used figures from a document to keep the main directory clearly arranged.
 It is not mandatory to use it.</p>
@@ -707,6 +700,8 @@ It is not mandatory to use it.</p>
 <p>The file <a href="styles/coliartcl.cls">coliartcl.cls</a> is the class file that controls the definition and design of the Coli-conc article template. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
 <h3 id="colidok-cls">colidok-cls</h3>
 <p>The file <a href="styles/colidok.cls">colidok.cls</a> is the class file that controls the definition and design of the Coli-conc documentation template. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrbook">scrbook</a>.</p>
+<h3 id="colireport-cls">colireport-cls</h3>
+<p>The file <a href="styles/colireport.cls">colireport.cls</a> is the class file that controls the definition and design of the Coli-conc report template. It is based on the <a href="https://komascript.de/">KOMA (German)</a> class <a href="https://ctan.org/pkg/scrartcl">scrartcl</a>.</p>
 <hr>
 <h1 id="how-to-start">How to start</h1>
 <p>A general good start on using LaTeX can be found on Wikibooks:</p>
@@ -716,17 +711,13 @@ It is not mandatory to use it.</p>
 </ul>
 <p>You may need to install it on your machine and general information about this can be found <a href="https://www.latex-project.org/get/">here</a>.</p>
 <p>There are many editors for LaTeX, so you will find some by googling for it. <a href="https://www.texstudio.org/">TeXStudio</a> is a very good start and available for various Windows, Linux, OS/2 and MacOS operating systems from the <a href="https://www.texstudio.org/#download">download page</a>.</p>
-<h2 id="writing-an-article">Writing an Article</h2>
-<h2 id="writing-a-documentation">Writing a Documentation</h2>
 <h2 id="alter-standard-information">Alter Standard Information</h2>
 <p>The file <a href="basics/input.tex">input.tex</a> contains the information that has to be altered by the user. These parts are beginning with <code>% FIXME</code>.</p>
 <p>If you use the documentation template you need to alter the <em>Header and Footer</em> information in <a href="basics/setup-colidok.tex">setup-colidok.tex</a> that is marked with <code>% FIXME</code>.</p>
 <h2 id="add-figures">Add Figures</h2>
 <pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{figure}[tbph]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\centering</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\includegraphics[width=0.7\linewidth]{./figures/kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\caption[Kafka]{Portrait&nbsp;von&nbsp;Franz&nbsp;Kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\label{fig:kafka}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{figure}</span></span></span></div></pre><h2 id="add-tables">Add Tables</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{table}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\centering</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\begin{tabular}{lll}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\textbf{Überschrift&nbsp;1}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;2}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;3}&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&amp;&nbsp;B&nbsp;&amp;&nbsp;C&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&amp;&nbsp;2&nbsp;&amp;&nbsp;3&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;&amp;&nbsp;b&nbsp;&amp;&nbsp;c&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;&amp;&nbsp;ii&nbsp;&amp;&nbsp;iii&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{tabular}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\caption{Eine&nbsp;dreispaltige&nbsp;Tabelle}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\label{tab:threecols}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{table}</span></span></span></div></pre><h3 id="alter-tables">Alter Tables</h3>
-<h2 id="add-listings">Add Listings</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{lstlisting}[language=Java,&nbsp;caption=Java&nbsp;example,&nbsp;label=lst:java]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>class&nbsp;Hallo&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>public&nbsp;static&nbsp;void&nbsp;main(&nbsp;String[]&nbsp;args&nbsp;)&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>System.out.print(&quot;Hallo&nbsp;Welt!&quot;);</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{lstlisting}</span></span></span></div></pre><h3 id="alter-listings">Alter Listings</h3>
-<h2 id="add-bibliography-entries">Add Bibliography Entries</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{table}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\centering</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\begin{tabular}{lll}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\textbf{Überschrift&nbsp;1}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;2}&nbsp;&amp;&nbsp;\textbf{Überschrift&nbsp;3}&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&amp;&nbsp;B&nbsp;&amp;&nbsp;C&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&amp;&nbsp;2&nbsp;&amp;&nbsp;3&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;&amp;&nbsp;b&nbsp;&amp;&nbsp;c&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;&amp;&nbsp;ii&nbsp;&amp;&nbsp;iii&nbsp;\\</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{tabular}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\caption{Eine&nbsp;dreispaltige&nbsp;Tabelle}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;\label{tab:threecols}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{table}</span></span></span></div></pre><h2 id="add-listings">Add Listings</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\begin{lstlisting}[language=Java,&nbsp;caption=Java&nbsp;example,&nbsp;label=lst:java]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>class&nbsp;Hallo&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>public&nbsp;static&nbsp;void&nbsp;main(&nbsp;String[]&nbsp;args&nbsp;)&nbsp;{</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>System.out.print(&quot;Hallo&nbsp;Welt!&quot;);</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>}</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>\end{lstlisting}</span></span></span></div></pre><h2 id="add-bibliography-entries">Add Bibliography Entries</h2>
 <p>Conversion into BibTeX entries can be done using an online tool like the <a href="http://truben.no/latex/bibtex/">BibTeX Online Editor</a> or <a href="https://arxiv2bibtex.org/">arXiv To BibTex</a>.</p>
 <p>If you are using <a href="https://www.citavi.com/">Citavi</a>, <a href="https://www.zotero.org/">Zotero</a> or <a href="https://www.mendeley.com/">Mendeley</a> just consult their manuals on how to export the BibTeX entries from there.</p>
 <ul>
@@ -738,18 +729,21 @@ It is not mandatory to use it.</p>
 </ul>
 <p>Publisher like Springer offer these BibTeX entries on their websites like on <a href="https://link.springer.com">Springer Link</a>, some libraries offer these entries too.</p>
 <h2 id="acronyms">Acronyms</h2>
-<p>Package Glossary</p>
-<h2 id="glosary">Glosary</h2>
-<p>Package Glossarya</p>
+<p>Package acronyms is used and how is described in the <a href="https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_Abk%C3%BCrzungsverzeichnis">German Wikibook (German)</a>.
+It should be substituted with the glossary package.</p>
+<h2 id="glossary">Glossary</h2>
+<p>Package glossary is used and described in the <a href="https://en.wikibooks.org/wiki/LaTeX/Glossary">English Wikibook (English)</a>.</p>
 <hr>
 <h2 id="useful-links">Useful Links</h2>
 <ul>
+<li><a href="https://de.wikibooks.org/wiki/LaTeX-Kompendium">Wikibooks: LaTeX-Kompendium (deutsch)</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">Wikibooks: LaTeX (english)</a></li>
 <li><a href="https://www.latex-project.org/">The LaTeX Project</a></li>
 <li><a href="https://www.latex-project.org/help/documentation/usrguide.pdf">The LaTeX Project User Guide (PDF)</a></li>
 <li><a href="https://tex.stackexchange.com/">TeX - LaTeX Stack Exchange</a></li>
-<li>Citavi</li>
-<li>Mendeley</li>
-<li>Zotero
--</li>
+<li><a href="https://www.citavi.com/de/">Citavi (deutsch)</a></li>
+<li><a href="https://www.citavi.com/de/">Citavi (english)</a></li>
+<li><a href="https://www.mendeley.com/">Mendeley</a></li>
+<li><a href="https://www.zotero.org/">Zotero</a></li>
 </ul></body>
 </html>

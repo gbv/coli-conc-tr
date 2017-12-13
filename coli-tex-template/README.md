@@ -21,7 +21,6 @@
     - [vzg.png](#vzg)
     - [bibliography.bib](#bibliography)
     - [input.tex](#input)
-    - [setup.tex](#setup)
     - [setup-allg.tex](#setup-allg)
     - [setup-colidok.tex](#setup-colidok)
   - [documentation/ Direcoty](#documentation-directory)
@@ -32,18 +31,13 @@
     - [colidok.cls](#colidok-cls)
     - [colireport.cls](#colireport-cls)
 - [How to start](#how-to-start)
-  - [Writing an Article](#writing-an-article)
-  - [Writing a Documentation](#writing-a-documentation)
-  - [Writing a Report](#writing-a-report)
   - [Alter Standard Information](#alter-standard-information)
   - [Add Figures](#add-figures)
   - [Add Tables](#add-tables)
-    - [Alter Tables](#alter-tables)
   - [Add Listings](#add-listings)
-    - [Alter Listings](#alter-listings)
   - [Add Bibliography Entries](#add-bibliography-entries)
     - [Citing](#citing)
-  - [Using Acronyms](#acronyms)
+  - [Acronyms](#acronyms)
   - [Glossary](#glossary)
 - [Useful Links](#useful-links)
 <!-- Table of Contents End-->
@@ -85,23 +79,25 @@ coli-tex-template
 │   bsptexte.tex
 │   coliartcl.tex
 │   colidok.tex
-    colireport.tex
+│   colireport.tex
 │
 └───basics/
 │   │   coli-conc-wave.png
 │   │   vzg.png
 │   │   bibliography.bib
 │   │   input.tex
-│   │   setup.tex
 │   │   setup-allg.tex
 │   │   setup-colidok.tex
 │
 └───documentation/
 │   │   bspdok-coliartcl.pdf
 │   │   bspdok-colidok.pdf
+│   │   bspdok-colireport.pdf
 │   │   coliartcl-screenshot.png
 │   │   colidok-content-screenshot.png
 │   │   colidok-main-screenshot.png
+│   │   colireport-front-screenshot.png
+│   │   colireport-second-screenshot.png
 │
 └───figures/
 │   │   kafka.jpg
@@ -109,7 +105,7 @@ coli-tex-template
 └───styles/
     │   coliartcl.cls
     │   colidok.cls
-        colireport.cls
+    │   colireport.cls
 ```
 
 # Meaning of Files
@@ -121,12 +117,13 @@ coli-tex-template
 File with random text snippets to fill the [bspdok-colidok.tex](bspdok-colidok.tex) with life. The basic document structure can be seen here (```chapter```, ```section``` and ```subsection```). It also shows how to include figures, tables and source code listings which are explained to detail in [Add Figures](#add-figures), [Add Tables](#add-tables) and [Add Listings](#add-listings).
 
 ### coliartcl-tex
-To make an article like document as shown in [bspdok-coliartcl.pdf](bspdok-coliartcl.pdf) the [coliartcl.tex](coliartcl.tex) file is used. It is based on the [KOMA (German)](https://komascript.de/) class [scrartcl](https://ctan.org/pkg/scrartcl).
+To make an article like document as shown in [bspdok-coliartcl.pdf](documentation/bspdok-coliartcl.pdf) the [coliartcl.tex](coliartcl.tex) file is used. It is based on the [KOMA (German)](https://komascript.de/) class [scrartcl](https://ctan.org/pkg/scrartcl).
 
 ### colidok-tex
-To make a more thesis like document like a documentation as shown in [bspdok-colidok.pdf](bspdok-colidok.pdf) the [colidok.tex](colidok.tex) file is used. It is based on the [KOMA (German)](https://komascript.de/) class [scrbook](https://ctan.org/pkg/scrbook).
+To make a more thesis like document like a documentation as shown in [bspdok-colidok.pdf](documentation/bspdok-colidok.pdf) the [colidok.tex](colidok.tex) file is used. It is based on the [KOMA (German)](https://komascript.de/) class [scrbook](https://ctan.org/pkg/scrbook).
 
 ### colireport-tex
+To make a report with a style nearly like the old Coli-conc reports as shown in [bspdok-report.pdf](documentation/bspdok-report.pdf) the [colireport.tex](colireport.tex) file has to be used. It is based on the [KOMA (German)](https://komascript.de/) class [scrartcl](https://ctan.org/pkg/scrartcl).
 
 
 ## basics Directory
@@ -143,19 +140,13 @@ The file [bibliography.bib](basics/bibliography.bib) contains the BibTeX formatt
 
 ### input
 The file [input.tex](basics/input.tex) contains the information that has to be altered by the user. These parts are beginning with ```% FIXME```.
-
-### setup
-The file [setup.tex](basics/setup.tex) contains the information about the used packages.
-- Also the Listings are defined here which can be altered.
-<span style="color:red">**(Should be moved to [input.tex](basics/input.tex)).**</span>
+This includes the Listings which are defined here and can be altered too.
 
 ### setup-allg
 The file [setup-allg.tex](basics/setup-allg.tex) contains all packages that are needed for both templates.
-- <span style="color:red">**(Should be moved to [setup.tex](basics/setup.tex)).**</span>
 
 ### setup-colidok
-The file [setup-colidok.tex](basics/setup-colidok.tex) contains additional definitions and packages that are needed for the documentation style template. The part in the *Header and Footer* section of the file that is marked with ```% FIXME``` needs to be altered.
-- Header and Footer <span style="color:red">**(Should be moved to [input.tex](basics/input.tex)).**</span>
+The file [setup-colidok.tex](basics/setup-colidok.tex) contains additional definitions and packages that are needed for the documentation style template.
 
 
 ##  documentation Directory
@@ -163,16 +154,23 @@ Contains the files that are used in this documentation (e.g. Screenshots). Not r
 
 ### bspdok-coliartcl
 Generated example [PDF](documentation/bspdok-coliartcl.pdf) from the [coliartcl.tex](coliartcl.tex).
+Screenshot of the Front Page of the coliartcl Template:
 ![Screenshot of the Front Page of the coliartcl Template](documentation/coliartcl-screenshot.png)
 
 ### bspdok-colidok
 Generated example [PDF](documentation/bspdok-colidok.pdf) from the [colidok.tex](colidok.tex).
+Screenshot of the Front Page of the colidok Template:
 ![Screenshot of the Front Page of the colidok Template](documentation/colidok-main-screenshot.png)
+Screenshot of the Table of Contents of the colidok Template:
 ![Screenshot of the Table of Contents of the colidok Template](documentation/colidok-content-screenshot.png)
 
 ### bspdok-colireport
-Generated example [PDF]() from the [colireport.tex](colireport.tex).
-![Screenshot of the Front Page of the colireport Template](documentation/colireport-screenshot.png)
+Generated example [PDF](documentation/bspdok-colireport.pdf) from the [colireport.tex](colireport.tex).
+Screenshot of the Front Page of the colireport Template:
+![Screenshot of the Front Page of the colireport Template](documentation/colireport-front-screenshot.png)
+Screenshot of the second Page of the colireport Template:
+![Screenshot of the second Page of the colireport Template](documentation/colireport-second-screenshot.png)
+
 
 ## figures Directory
 Currently contains the example file of Franz Kafka ([kafka.jpg](figures/kafka.jpg)) and is intended to store all used figures from a document to keep the main directory clearly arranged.
@@ -186,6 +184,7 @@ The file [coliartcl.cls](styles/coliartcl.cls) is the class file that controls t
 The file [colidok.cls](styles/colidok.cls) is the class file that controls the definition and design of the Coli-conc documentation template. It is based on the [KOMA (German)](https://komascript.de/) class [scrbook](https://ctan.org/pkg/scrbook).
 
 ### colireport-cls
+The file [colireport.cls](styles/colireport.cls) is the class file that controls the definition and design of the Coli-conc report template. It is based on the [KOMA (German)](https://komascript.de/) class [scrartcl](https://ctan.org/pkg/scrartcl).
 
 ***
 
@@ -197,14 +196,6 @@ A general good start on using LaTeX can be found on Wikibooks:
 You may need to install it on your machine and general information about this can be found [here](https://www.latex-project.org/get/).
 
 There are many editors for LaTeX, so you will find some by googling for it. [TeXStudio](https://www.texstudio.org/) is a very good start and available for various Windows, Linux, OS/2 and MacOS operating systems from the [download page](https://www.texstudio.org/#download).
-
-## Writing an Article
-
-
-## Writing a Documentation
-
-
-## Writing a Report
 
 
 ## Alter Standard Information
@@ -238,7 +229,7 @@ If you use the documentation template you need to alter the *Header and Footer* 
 	\label{tab:threecols}
 \end{table}
 ```
-### Alter Tables
+
 
 ## Add Listings
 ```
@@ -250,7 +241,6 @@ class Hallo {
 }
 \end{lstlisting}
 ```
-### Alter Listings
 
 
 ## Add Bibliography Entries
@@ -267,10 +257,11 @@ Publisher like Springer offer these BibTeX entries on their websites like on [Sp
 
 
 ## Acronyms
-Package Glossary
+Package acronyms is used and how is described in the [German Wikibook (German)](https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_Abk%C3%BCrzungsverzeichnis).
+It should be substituted with the glossary package.
 
 ## Glossary
-Package Glossary
+Package glossary is used and described in the [English Wikibook (English)](https://en.wikibooks.org/wiki/LaTeX/Glossary).
 
 ***
 
