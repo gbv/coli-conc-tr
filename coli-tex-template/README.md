@@ -155,7 +155,6 @@ The file [setup-allg.tex](basics/setup-allg.tex) contains all packages that are 
 
 ### setup-colidok
 The file [setup-colidok.tex](basics/setup-colidok.tex) contains additional definitions and packages that are needed for the documentation style template. The part in the *Header and Footer* section of the file that is marked with ```% FIXME``` needs to be altered.
-- Multibib <span style="color:red">**(Should be removed).**</span>
 - Header and Footer <span style="color:red">**(Should be moved to [input.tex](basics/input.tex)).**</span>
 
 
@@ -164,15 +163,16 @@ Contains the files that are used in this documentation (e.g. Screenshots). Not r
 
 ### bspdok-coliartcl
 Generated example [PDF](documentation/bspdok-coliartcl.pdf) from the [coliartcl.tex](coliartcl.tex).
-![Screnshot of the Front Page of the coliartcl Template](documentation/coliartcl-screenshot.png)
+![Screenshot of the Front Page of the coliartcl Template](documentation/coliartcl-screenshot.png)
 
 ### bspdok-colidok
 Generated example [PDF](documentation/bspdok-colidok.pdf) from the [colidok.tex](colidok.tex).
-![Screnshot of the Front Page of the colidok Template](documentation/colidok-main-screenshot.png)
-![Screnshot of the Table of Contents of the colidok Template](documentation/colidok-content-screenshot.png)
+![Screenshot of the Front Page of the colidok Template](documentation/colidok-main-screenshot.png)
+![Screenshot of the Table of Contents of the colidok Template](documentation/colidok-content-screenshot.png)
 
 ### bspdok-colireport
-
+Generated example [PDF]() from the [colireport.tex](colireport.tex).
+![Screenshot of the Front Page of the colireport Template](documentation/colireport-screenshot.png)
 
 ## figures Directory
 Currently contains the example file of Franz Kafka ([kafka.jpg](figures/kafka.jpg)) and is intended to store all used figures from a document to keep the main directory clearly arranged.

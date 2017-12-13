@@ -1,19 +1,5 @@
-\ProvidesClass{coliartcl}[2017/09/28 v 0.1 Coli Article]
+\ProvidesClass{coliartcl}[2017/12/13 v 0.1 Coli Article]
 \LoadClassWithOptions{scrartcl}
-
-%\documentclass[12pt,        % standard font size
-%  english,ngerman,          % english primary, german secondary
-%  paper=a4,                 % standard paper size
-%  captions=tablesignature,  % captions below tables
-%  listof=numbered,          % including lists of... in the ToC
-%  bibliography=totoc,       % references in ToC
-%  headings=small,           % size of headings
-%  headinclude=false,        % don't include page head in page layout
-%  footinclude=false,        % don't include page foot in page layout
-%  parskip=half-,            % space between paragraphs, no indentation
-%  oneside,                  % one-sided print
-%  DIV=12                    %
-%]{scrartcl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Now we can start to load the packages needed
@@ -22,18 +8,11 @@
 %%%%%%%%%% control margin   %%%%%%%%%%
 \usepackage{geometry}
 \geometry{
-  a4paper,
-  left=40mm,
-  right=40mm,
-  top=20mm,
+  a4paper,		% DIN A 4 paper as base
+  left=40mm,	% margin left
+  right=40mm,	% margin right
+  top=20mm,		% margin top
 }
-
-
-%The next command sets up an environment for the abstract to your paper.
-%\newenvironment{coliabstract}{%
-%	\begin{quote} \bf}
-%	{\end{quote}
-%}
 
 
 % If your reference list includes text notes as well as references,
@@ -56,44 +35,3 @@
 	{\setlength{\leftmargin}{.22in}}
 	{\setlength{\labelsep}{.5em}}}
 {\end{list}}
-
-
-% Include your paper's title here
-\title{
-	\colititle
-}
-
-
-% Place the author information here.  Please hand-code the contact
-% information and notecalls; do *not* use \footnote commands.  Let the
-% author contact information appear immediately below the author names
-% as shown.  We would also prefer that you don't change the type-size
-% settings shown here.
-\author
-	{
-		\coliauthorone,$^{1\ast}$ 
-    	\coliauthortwo,$^{1}$ 
-    	\coliauthorthree$^{2}$
-    	\\
-		\\
-		\normalsize{$^{1}$
-			\coliaddressone
-		}
-		\\
-		\normalsize{
-			\coliaddresstwo
-		}
-		\\
-		\normalsize{$^{2}$
-			\coliaddressthree
-		}
-		\\
-		\\
-		\normalsize{$^\ast$To whom correspondence should be addressed; E-mail:  coliemail}
-	}
-
-% Include the date command, but leave its argument blank.
-\date{
-	\colidate
-}
-%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
