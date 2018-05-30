@@ -133,4 +133,16 @@ tr10:
     license: CC-BY-SA
     lang: de
     language: ngerman
-
+tr11:
+    series: coli-conc Technical Report
+    number: 11
+    title: Cocoda technical architecture
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2018-05-31
+    doi: ...
+    license: CC-BY-SA
+    lang: en
+    language: english
