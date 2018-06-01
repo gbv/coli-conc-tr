@@ -136,13 +136,13 @@ tr10:
 tr11:
     series: coli-conc Technical Report
     number: 11
-    title: Cocoda technical architecture
+    title: Cocoda Technical Architecture
     author:
         name: Jakob Voß
         email: jakob.voss@gbv.de
         affiliation: Verbundzentrale des GBV (VZG)
     date: 2018-05-31
-    doi: ...
+    doi: 10.5281/zenodo.1256498
     license: CC-BY-SA
     lang: en
     language: english
