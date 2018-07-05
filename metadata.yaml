@@ -146,3 +146,16 @@ tr11:
     license: CC-BY-SA
     lang: en
     language: english
+tr12:
+    series: coli-conc Technical Report
+    number: 12
+    title: Identification of Mappings between Knowledge Graph Concepts
+    author:
+        name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+    date: 2018-08-??
+    doi: 10.5281/zenodo.????
+    license: CC-BY-SA
+    lang: en
+    language: english
