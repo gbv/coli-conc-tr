@@ -30,9 +30,9 @@ fontsize: 14pt
 
 # Mapping-Tool Cocoda
 
-* Open Source Webanwendung (Chrome / Firefox)
+* Open Source **Webanwendung** (Chrome / Firefox)
 
-* Einbindung per API auch in anderem Kontext
+* Einbindung per **API** auch in anderem Kontext
 
 * <https://gbv.github.io/cocoda/dev/> (Entwicklungsversion) \
   <https://coli-conc.gbv.de/cocoda/> (Releases)
@@ -50,7 +50,7 @@ fontsize: 14pt
 
 # Mitmachen
 
-*Wir brauchen Feedback auf Basis tatsächlicher Mapping-Versuche!*
+*Wir brauchen Feedback auf Basis tatsächlicher Mappings!*
 
 <https://coli-conc.gbv.de>
 
