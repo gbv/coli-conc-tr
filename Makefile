@@ -6,7 +6,7 @@ HTML_OPTIONS=--template template.html \
 			 --base-header-level=3
 PHP_OPTIONS=--template template.php \
 			 --base-header-level=3
-PDF_OPTIONS=--template template.tex --latex-engine=lualatex
+PDF_OPTIONS=--template template.tex --pdf-engine=lualatex
 TEX_OPTIONS=--template template.tex
 
 metadata: metadata.yaml

@@ -149,6 +149,20 @@ tr11:
 tr12:
     series: coli-conc Technical Report
     number: 12
+    title: Übersicht von GND-Konkordanzen
+    author:
+      - name: Jakob Voß
+        email: jakob.voss@gbv.de
+        affiliation: Verbundzentrale des GBV (VZG)
+      - name: Yvonne Jahns
+        affiliation: Deutsche Nationalbibliothek (DNB) 
+    date: 2018-11-??
+    license: CC-BY-SA
+    lang: de
+    language: ngerman
+tr13:
+    series: coli-conc Technical Report
+    number: 13
     title: Identification of Mappings between Knowledge Graph Concepts
     author:
         name: Jakob Voß
