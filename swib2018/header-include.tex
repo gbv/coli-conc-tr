@@ -1,0 +1,29 @@
+% title page
+\setbeamerfont{title}{series=\bf,size=\LARGE}
+\setbeamerfont{institute}{size=\normalsize}
+
+% section titles
+\setbeamerfont{section title}{series=\bf}
+
+% normal slides
+\setbeamerfont{frametitle}{series=\bf}
+
+% omit "figure:" in captions
+\setbeamertemplate{caption}{\insertcaption}
+
+% list icons
+\setbeamertemplate{itemize item}{\hbox{\textbullet}}
+\setbeamertemplate{itemize subitem}{\small\hbox{\textbullet}}
+\setbeamertemplate{itemize subsubitem}{\footnotesize\hbox{\textbullet}}
+
+% GBV/VZG specific colors
+\definecolor{VZGblue}{RGB}{84,128,187}
+\definecolor{VZGgrey}{RGB}{238,238,238}
+\setbeamercolor{structure}{fg=VZGblue}
+\setbeamercolor{background canvas}{bg=VZGgrey}
+
+% Change font
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Calibri}
