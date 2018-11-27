@@ -32,9 +32,9 @@ Mapping relation types in SKOS
 
 # Mapping metadata
 
-Information about individual mapping statements
+<!-- Information about individual mapping statements -->
 
-* Cononcordance (e.g. VIAF-Wikidata)
+* Concordance (e.g. VIAF-Wikidata)
 * Provenance (creator, date...)
 * Matching method, determinacy...
 
@@ -74,4 +74,4 @@ Information about individual mapping statements
 
 ---
 
-![](cocoda-screenshot-2018-10.png)
+![](cocoda-screenshot-2018-11.png)
