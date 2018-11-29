@@ -1,6 +1,6 @@
 .SUFFIXES: .md .html .tex .pdf .php
 
-PANDOC_OTPIONS=--standalone --smart
+PANDOC_OTPIONS=--standalone
 HTML_OPTIONS=--template template.html \
 			 --include-before-body=navbar.html \
 			 --base-header-level=3
@@ -15,7 +15,6 @@ metadata: metadata.yaml
 reports.make: metadata
 
 .md.html: metadata template.html
-	@echo $@
 	@pandoc $(PANDOC_OPTIONS) -t html5 $(HTML_OPTIONS) -M source:$< \
 		--bibliography $(dir $<)bibliography.bib \
 		$(dir $<)metadata.yaml $< | sed 's/^<table/<table class="table"/' > $@
